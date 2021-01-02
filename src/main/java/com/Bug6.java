@@ -11,7 +11,7 @@ public class Bug6 {
         for (int x = 0; x < mas.length; x++) {
             for (int y = 0; y < mas[x].length; y++) {
                 System.out.println("\nInner mas >>> ");
-                for (int z = 0; z < mas[x][x].length; z++) {
+                for (int z = 0; z < mas[x][y].length; z++) {
                     System.out.print(mas[x][y][z]);
                 }
             }
@@ -19,3 +19,5 @@ public class Bug6 {
         }
     }
 }
+
+//14 = for (int z = 0; z < mas[x][x].length; z++) -> for (int z = 0; z < mas[x][y].length; z++) нужен y

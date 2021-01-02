@@ -31,10 +31,11 @@ public class Bug7 {
             for (int j = 0; j < mas[i].length; j++) {
                 if (i == j) {
                     System.out.println(String.format("skip>>>>i=%d, j=%d", i, j));
-                    continue;
+                    break;
                 }
                 System.out.println(String.format("i=%d, j=%d", i, j));
             }
         }
     }
 }
+// 34 нужен  break вместо continue;

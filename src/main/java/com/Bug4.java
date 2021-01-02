@@ -9,7 +9,7 @@ public class Bug4 {
         boolean mas[] = {false, true, true, true, false, false};//3
         int falseCounter = 0;
         for (int i = 0; i < mas.length; i++) {
-            if (mas[i] = false) {
+            if (mas[i] == false) {
                 falseCounter++;
             }
         }
@@ -17,3 +17,4 @@ public class Bug4 {
         System.out.println(falseCounter);//почему не 3?
     }
 }
+//if (mas[i] = false) должно быть if (mas[i] == false)
